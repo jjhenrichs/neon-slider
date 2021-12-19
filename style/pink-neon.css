@@ -1,0 +1,55 @@
+.pink-neon {
+    border: 1px solid #f35ab8;
+    height: 150px;
+    width: 200px;
+}
+
+.pink-neon input {
+    appearance: none;
+    background-color: #222;
+    height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px inset #111, -5px -5px 10px inset #111,
+     -5px 5px 10px inset #111, 5px -5px 10px inset #111;
+}
+
+.pink-neon input:checked {
+    background: #f35ab8;
+    box-shadow: 5px 5px 20px #f535aa, 5px -5px 20px #c93590, -5px -5px 20px #f535aa,
+     -5px 5px 20px #f535aa, 5px 5px 10px inset #e448a8, -5px -5px 10px inset #e73ba5,
+     5px -5px 10px inset #df369e;
+}
+
+.pink-neon .slider {
+    height: 46px;
+    width: 66px;
+    top: 50%;
+    left: 37%;
+    transform: translate(29%, -50%);
+    position: absolute;
+    background: #333;
+    border-radius: 23px;
+    transition: .4s;
+}
+
+.pink-neon input:checked + .slider {
+    transform: translate(-49%, -50%);
+    transition: .4s;
+}
+
+.pink-neon .slider:before {
+    content: "";
+    height: 6px;
+    width: 8px;
+    transform: translate(650%, 300%);
+    position: absolute;
+    background: #111;
+    border-radius: 6px;
+}
+
+.pink-neon input:checked + .slider:before {
+    transition: .4s;
+    background: #f35ab8;
+    box-shadow: 1px 1px 3px #f16ebf, -1px -1px 3px #f16ebf, -1px 1px 3px #f16ebf, 1px -1px 3px #f16ebf;
+}
