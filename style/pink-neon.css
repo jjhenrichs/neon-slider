@@ -22,19 +22,22 @@
 }
 
 .pink-neon .slider {
+    display: inline-block;
     height: 46px;
     width: 66px;
-    top: 50%;
-    left: 37%;
-    transform: translate(29%, -50%);
-    position: absolute;
+    top: 47%;
+    right: 26%;
+    transform: translate(30%, -50%);
+    position: relative;
     background: #333;
     border-radius: 23px;
     transition: .4s;
 }
 
 .pink-neon input:checked + .slider {
-    transform: translate(-49%, -50%);
+    /* transform: translate(-50%, -50%); */
+    top: 47%;
+    right: 51%;
     transition: .4s;
 }
 
@@ -42,7 +45,7 @@
     content: "";
     height: 6px;
     width: 8px;
-    transform: translate(650%, 300%);
+    transform: translate(600%, 300%);
     position: absolute;
     background: #111;
     border-radius: 6px;

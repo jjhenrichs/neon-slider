@@ -9,7 +9,10 @@ body, html {
 }
 
 .container {
+    border: 1px solid aqua;
     height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .center {
